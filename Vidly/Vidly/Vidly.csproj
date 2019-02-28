@@ -217,6 +217,18 @@
     <Compile Include="Migrations\201902280020468_ApplyAnnotationsToCustomerName.Designer.cs">
       <DependentUpon>201902280020468_ApplyAnnotationsToCustomerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201902280127004_AddNameToMemnbershipType.cs" />
+    <Compile Include="Migrations\201902280127004_AddNameToMemnbershipType.Designer.cs">
+      <DependentUpon>201902280127004_AddNameToMemnbershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902280129433_PopulateMembershipTypeName.cs" />
+    <Compile Include="Migrations\201902280129433_PopulateMembershipTypeName.Designer.cs">
+      <DependentUpon>201902280129433_PopulateMembershipTypeName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902280143468_ApplyAnnotationsToMembershipTypeName.cs" />
+    <Compile Include="Migrations\201902280143468_ApplyAnnotationsToMembershipTypeName.Designer.cs">
+      <DependentUpon>201902280143468_ApplyAnnotationsToMembershipTypeName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -324,6 +336,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201902280020468_ApplyAnnotationsToCustomerName.resx">
       <DependentUpon>201902280020468_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902280127004_AddNameToMemnbershipType.resx">
+      <DependentUpon>201902280127004_AddNameToMemnbershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902280129433_PopulateMembershipTypeName.resx">
+      <DependentUpon>201902280129433_PopulateMembershipTypeName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902280143468_ApplyAnnotationsToMembershipTypeName.resx">
+      <DependentUpon>201902280143468_ApplyAnnotationsToMembershipTypeName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
