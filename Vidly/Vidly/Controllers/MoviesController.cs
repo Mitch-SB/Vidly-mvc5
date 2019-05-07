@@ -24,6 +24,7 @@ namespace Vidly.Controllers
             _context.Dispose();   
         }
 
+        [Authorize(Roles = "CanManageMovies")]
         public ActionResult New()
         {
             var genre = _context.Genres.ToList();
@@ -94,7 +95,10 @@ namespace Vidly.Controllers
         // GET: Movies
         public ViewResult Index()
         {
-            return View();
+            if (User.IsInRole("CanManageMovies"))
+                return View("List");
+
+            return View("ReadOnlyList");
         }
 
         public ActionResult Random()
