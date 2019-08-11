@@ -63,9 +63,6 @@
                 {
                     vm.customerId = customer.id;
                 });
-        //});
-
-        //$(document).ready(function () {
             
             var movies = new Bloodhound({
                 datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
@@ -98,7 +95,7 @@
 
             $.validator.addMethod("atLeastOneMovie", function () {
                 return vm.movieIds.length > 0;
-            }, "Please select a valid movie.");
+            }, "Please select at least movie.");
 
             var validator = $("#newRental").validate({
                 submitHandler: function () {
